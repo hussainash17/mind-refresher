@@ -1,0 +1,23 @@
+import { Test, TestingModule } from '@nestjs/testing';
+import { MessagesController } from './messages.controller';
+
+describe('MessagesController', () => {
+  let controller: MessagesController;
+
+  beforeEach(async () => {
+    const module: TestingModule = await Test.createTestingModule({
+      controllers: [MessagesController],
+    }).compile();
+
+    controller = module.get<MessagesController>(MessagesController);
+  });
+
+  it('should be defined', () => {
+    expect(controller).toBeDefined();
+  });
+
+  // it('The Query params should return valid object', () => {
+  //   console.log(typeof controller.getMessages('32'));
+  //   expect(controller.getMessages('32')).toEqual('32');
+  // });
+});
