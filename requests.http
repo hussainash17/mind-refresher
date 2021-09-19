@@ -3,13 +3,13 @@ POST http://localhost:3000/messages HTTP/1.1
 content-type: application/json
 
 {
-    "content": "Hi man"
+    "content": "Hello Ohee"
 }
 
 ### 
 
-GET http://localhost:3000/messages/?validate=true HTTP/1.1
+GET http://localhost:3000/messages HTTP/1.1
 
 ### 
 
-GET http://localhost:3000/messages/32 HTTP/1.1
+GET http://localhost:3000/messages/633 HTTP/1.1
