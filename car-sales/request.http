@@ -4,6 +4,15 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-    "email": "ohee@gmail.com",
+    "email": "adn@gmail.com",
     "password": "123456"
+}
+
+### Fetching all the users by email
+
+GET http://localhost:3000/auth/all
+Content-Type: application/json
+
+{
+    "email": "adn@gmail.com"
 }
