@@ -1,9 +1,10 @@
 import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
-import { MessagesModule } from './messages/messages.module';
+//u import { MessagesModule } from './messages/messages.module';
+import { MessagesDiModule } from './messages-di/messages-di.module';
 
 (async function start() {
-  const app = await NestFactory.create(MessagesModule);
+  const app = await NestFactory.create(MessagesDiModule);
   app.useGlobalPipes(new ValidationPipe());
   await app.listen(3000);
 })();

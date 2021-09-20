@@ -1,15 +1,15 @@
 
-POST http://localhost:3000/messages HTTP/1.1
+POST http://localhost:3000/messages-di HTTP/1.1
 content-type: application/json
 
 {
-    "content": "Hello Ohee"
+    "content": "Hello Oheee"
 }
 
 ### 
 
-GET http://localhost:3000/messages HTTP/1.1
+GET http://localhost:3000/messages-di HTTP/1.1
 
 ### 
 
-GET http://localhost:3000/messages/633 HTTP/1.1
+GET http://localhost:3000/messages-di/633 HTTP/1.1
