@@ -1,6 +1,8 @@
 # compiled output
 /dist
 /node_modules
+/computer/node_modules
+/computer/dist
 
 # Logs
 logs
